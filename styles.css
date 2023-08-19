@@ -1,0 +1,109 @@
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --veryDarkBlueMain: hsl(217, 54%, 11%);
+  --veryDarkBlueCard: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+body {
+    background-color: var(--veryDarkBlueMain);
+}
+
+#containar {
+    max-width: 350px;
+    border-radius: 15px;
+    background-color: var(--veryDarkBlueCard);
+    padding: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+.hero img {
+    border-radius: 10px;
+}
+
+.info {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--softBlue);
+    margin-bottom: 1rem;
+}
+
+.info h1 {
+    color: var(--white);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.description {
+    color: var(--softBlue);
+}
+
+.left-padding {
+    padding-left: 0.3rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    color: var(--softBlue);
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+    color: var(--softBlue);
+}
+
+.avatar img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creation span {
+    color: var(--white);
+}
+
+.attribution p {
+    text-align: center;
+    color: var(--softBlue);
+    margin-top: 0.7rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+}
+
+.attribution a {
+  color: var(--cyan);
+}
+
+span:hover, h1:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
