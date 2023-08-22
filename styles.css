@@ -31,37 +31,62 @@ body {
     background-color: var(--veryDarkBlueCard);
     padding: 1.5rem;
     font-family: "Outfit", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.hero img {
+.hero {
+    background-color: var(--cyan);
     border-radius: 10px;
-}
+    overflow: hidden;
+    position: relative;
+ }
+ .hero:hover .first-img {
+    opacity: 0.5;
+    cursor: pointer;
+ }
+ .hero:hover .second-img {
+    display: block;
+    cursor: pointer;
+ }
+ 
+ .hero .first-img {
+    display: block;
+    width: 100%;
+ }
+ .hero .second-img {
+    position: absolute;
+    display: none;
+    top: calc(50% - 1.5rem);
+    left: calc(50% - 1.5rem);
+    width: 3rem;
+    height: 3rem;
+ }
 
 .info {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--softBlue);
     margin-bottom: 1rem;
 }
 
 .info h1 {
     color: var(--white);
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .description {
     color: var(--softBlue);
+    font-weight: 300;
 }
 
 .left-padding {
-    padding-left: 0.3rem;
+    padding-left: 0.5rem;
 }
 
 .box {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 1.7rem;
 }
 
 .left {
